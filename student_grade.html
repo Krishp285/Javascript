@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        name = prompt("\nenter name:-");
+        roll_no = parseInt(prompt("\nroll no :-"));
+        marks_1 = parseInt(prompt("\nmarks_1 :-"));
+        marks_2 = parseInt(prompt("\nmarks_2 :-"));
+        marks_3 = parseInt(prompt("\nmarks_3 :-"));
+        marks_4 = parseInt(prompt("\nmarks_4 :-"));
+        marks_5 = parseInt(prompt("\nmarks_5 :-"));
+
+        total = parseInt(marks_1 + marks_2 + marks_3 + marks_4 + marks_5);
+        avg =  parseFloat(total/5);
+
+        alert("\nname:-"+name+"\n"+roll_no+"\nmarks_1 :-"+marks_1+"\nmarks_2 :-"+marks_2+"\nmarks_3 :-"+marks_3+"\nmarks_4 :-"+marks_4+"\nmarks_5 :-"+marks_5+"\ntotal:-"+total+"\navg:-"+avg);
+       
+        if(avg >=90 && avg<=100)
+        {
+            alert("A grade");
+        }   
+        else if(avg >=80 && avg<90)
+        {
+            alert("B grade");
+        }
+        else if(avg >=70 && avg<80)
+        {
+            alert("c grade");
+        }
+        else if(avg >=60 && avg<70)
+        {
+            alert("D grade");
+        }
+        else
+        {
+            alert("Fail");
+        }
+    </script>
+</body>
+</html>
+
